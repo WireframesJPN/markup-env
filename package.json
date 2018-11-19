@@ -1,0 +1,37 @@
+{
+  "name": "markup-env",
+  "version": "0.5.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=test parcel src/*.pug",
+    "build": "node ./lib/index.js",
+    "build:parcel": "parcel build src/*.pug --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "= <=>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "less": {
+    "sourceMap": {
+      "sourceMapFileInline": true
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "jquery": "^3.3.1",
+    "js-yaml": "^3.12.0",
+    "jsdom": "^13.0.0",
+    "less": "^3.8.1",
+    "parcel-bundler": "^1.10.3",
+    "pug": "^2.0.3",
+    "shelljs": "^0.8.2"
+  }
+}

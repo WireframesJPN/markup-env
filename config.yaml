@@ -1,0 +1,15 @@
+file_base_url: "."
+dev_base: "/src"
+dist_base: "/my-dist"
+html_base: "/"
+js_base: "/js"
+css_base: [ "/less", "/style" ]
+html:
+  - index.pug
+js:
+less:
+  - styles.less
+copy_files:
+  - "/img"
+  - [ "/less/fonts", "/style/fonts" ]
+  - [ "/less/ajax-loader.gif", "/style/ajax-loader.gif" ]
